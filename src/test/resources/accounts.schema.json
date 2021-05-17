@@ -14,7 +14,7 @@
     ],
     "properties": {
       "id": {
-        "type": "integer"
+        "type": "string"
       },
       "name": {
         "type": "string",
@@ -25,11 +25,11 @@
         "pattern": "^•• \\d{4}$"
       },
       "balance": {
-        "type": "integer",
-        "default": 0
+        "type": "integer"
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "enum": ["RUB", "USD"]
       }
     }
   }
